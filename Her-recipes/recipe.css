@@ -1,0 +1,118 @@
+
+ 
+
+* {
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: #ccc;
+}
+.header{
+  padding: 60px;
+  border: 50px;
+  text-align: center;
+  background-image:url("Food images/ink\ splash.jpg") ;
+  border-image-width: 557px;
+  min-height: 100%;
+  font-size: 30px;
+  color: #a19696;
+  
+}
+.content {
+  padding:20px;
+  border: 50px;
+  text-align: center;
+  word-wrap: normal;
+}
+.web{
+  background-image:url("Food images/ink\ splash.jpg");
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.gallery:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid black;
+}
+
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size:larger;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color:#ccc;
+  color:black;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:black;
+  color: #ccc;
+  margin:20px;
+  padding:10px;
+  
+}
+.button{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:black;
+  color:#ccc;
+  margin:20px;
+  float: right;
+}
+button:hover{
+  background-color: #ccc;
+  color:black;
+}
+
+
