@@ -1,9 +1,9 @@
 
- 
+
 
 * {
   box-sizing: border-box;
-  
+
 }
 body{
   background-color: #ccc;
@@ -17,7 +17,7 @@ body{
   min-height: 100%;
   font-size: 30px;
   color: #a19696;
-  
+
 }
 .content {
   padding:20px;
@@ -25,8 +25,13 @@ body{
   text-align: center;
   word-wrap: normal;
 }
-.web{
+.container{
   background-image:url("Food images/ink\ splash.jpg");
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 div.gallery {
@@ -42,8 +47,10 @@ div.gallery:hover {
 
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+/*  width: 100%;
+  height: auto; */
+  width: 450px;
+  height: 400px;
 }
 
 div.desc {
@@ -52,24 +59,6 @@ div.desc {
   background-color: white;
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 100%;
-}
-
-@media only screen and (min-width: 500px) {
-  .responsive {
-    width: 50%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
 
 .clearfix:after {
   content: "";
@@ -101,7 +90,7 @@ button{
   color: #ccc;
   margin:20px;
   padding:10px;
-  
+
 }
 .button{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -114,5 +103,3 @@ button:hover{
   background-color: #ccc;
   color:black;
 }
-
-
